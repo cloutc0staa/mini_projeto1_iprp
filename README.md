@@ -3,6 +3,7 @@
 Então, primeiro, no ficheiro "principal_alunos.py", na função "carrega_jogo" criei um loop que lê o ficheiro e cria uma lista com o conteúdo do mesmo (no caso é um mapa) e atualizei o dicionário "estado_jogo" na key "mapa" com essa lista que criei.
 
 #------------------------
+```
 def carrega_jogo(estado_jogo, nome_ficheiro):
     # Abrir e ler o arquivo
     with open(rf"C:\\Users\\Utilizador\\Desktop\\Codigo-Alunos\\Codigo-Alunos\\{nome_ficheiro}", 'r') as file:
@@ -16,6 +17,7 @@ def carrega_jogo(estado_jogo, nome_ficheiro):
     estado_jogo['mapa'] = elementos
 
     return estado_jogo['mapa']
+```
 
 #------------------------
 
@@ -25,9 +27,11 @@ Coloquei o pacman a andar, basicamente o dicionário "estado_jogo" possui uma ke
 
 #-------------------------
 
+```
 def pacman_cima(estado_jogo):
     estado_jogo['pacman']['direcao_atual'] = (0, 5)
     return estado_jogo['pacman']['direcao_atual']
+```
 
 #-------------------------
 
