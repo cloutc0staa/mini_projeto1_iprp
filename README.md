@@ -38,11 +38,11 @@ def pacman_cima(estado_jogo):
 Depois tem uma função chamada "movimenta_pacman" que pega nesse valor do tuplo e calcula se é um movimento válido atravéz daquilo que o stor que veio quando o stor charles faltou disse, epa tinha lá um código como comentario a dizer como se fazia e eu so tirei de comentário e deu.
 
 #------------------------
-
+```
 def perdeu_jogo(estado_jogo):
     for i in range(3,7):
         if ha_colisao((estado_jogo['pacman']['objeto']),(estado_jogo['fantasmas'][i]['objeto'])):
             return True
-
+```
 #-------------------------
 
